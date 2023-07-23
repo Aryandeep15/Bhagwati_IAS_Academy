@@ -1,0 +1,38 @@
+.Register {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(220, 220, 220);
+  }
+
+.social-icons {
+    display: flex;
+    padding: 10px;
+    gap: 50px;
+  }
+
+  .social-icons a{
+    color:rgb(175, 40, 40);
+  }
+
+  .social-icons a svg{
+    font-size: 40px;
+  }
+
+  .social-icons a svg:hover {
+    transform:scale(1.4);
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    color: rgb(175, 40, 40);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .register-logo {
+    margin-right: 5px; /* Adjust the spacing as needed */
+  }

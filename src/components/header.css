@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(175, 40, 40);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  gap:40px;
+}
+
+.contact-info p {
+  color: white;
+}
+
