@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faEnvelope, faBook, faVideo, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import Logo from './Logo.jpg';
 
 const AboutUs = () => {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsFixed(true);
+    } else {
+      setIsFixed(false);
+    }
+  };
+
   return (
-    <div className="about-us">
+    <div className={`about-us ${isFixed ? 'fixed' : ''}`} id="myHeader">
       <div className="logo">
         <img src={Logo} alt="Logo" />
       </div>

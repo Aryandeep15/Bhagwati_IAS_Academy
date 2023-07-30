@@ -1,0 +1,52 @@
+
+.academy-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.academy-intro,
+.director-message {
+  flex: 1 1 45%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.academy-logo,
+.director-photo {
+  width: 150px; /* Enlarge the images */
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  background-color: rgb(175, 40, 40);
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add gap between components */
+.academy-intro {
+  margin-right: 20px;
+}
+
+/* Media query to stack components on smaller screens */
+@media (max-width: 768px) {
+  .academy-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .academy-intro,
+  .director-message {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+}

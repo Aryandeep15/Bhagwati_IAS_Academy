@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './BranchAddress.css';
 
 const BranchAddress = () => {
-  const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illo ipsa velit facilis provident qui eligendi, quia ut magnam tenetur. Accusantium nisi quos delectus in necessitatibus ad. Ducimus, id!";
+  const text =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil earum illo ipsa velit facilis provident qui eligendi, quia ut magnam tenetur. Accusantium nisi quos delectus in necessitatibus ad. Ducimus, id!";
   const [expandedPanel, setExpandedPanel] = useState(null);
 
   const toggleExpand = (panelName) => {
@@ -27,13 +28,13 @@ const BranchAddress = () => {
 
   return (
     <div className="container my-2">
-      <div className="row">
-        <div className="col-md-6">
+      <div className="panels-container">
+        <div className="panel">
           <CollapsiblePanel title="Kolkata - New Town">
             <span>{text}</span>
           </CollapsiblePanel>
         </div>
-        <div className="col-md-6">
+        <div className="panel">
           <CollapsiblePanel title="New Delhi - Vidya Vihar">
             <span>{text}</span>
           </CollapsiblePanel>

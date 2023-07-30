@@ -1,39 +1,48 @@
 .about-us {
-    padding-top: 5px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    
-  }
-  
-  .logo img {
-    width: 50px; /* Adjust the width as needed */
-    height: auto;
-    margin-left: 20px;
-  }
-  
-  .navigation {
-    margin-left: auto;
-    margin-right:400px;
-  }
-  
-  .navigation ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .navigation li {
-    margin-left: 40px; /* Adjust the margin as needed */
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color: rgb(124, 124, 124);
-  }
-  
-  .navigation a:hover {
-    color: blue; /* Adjust the color as needed */
-  }
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Add a background color to the header */
+  transition: top 0.3s; /* Add a smooth transition for the fixed position */
+}
 
-  
+.about-us.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-left: 20px;
+}
+
+.navigation {
+  margin-left: auto;
+  margin-right:400px;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-right: 20px; /* Adjust the margin-right as needed */
+}
+
+.navigation li {
+  margin-left: 40px; /* Adjust the margin as needed */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(124, 124, 124);
+}
+
+.navigation a:hover {
+  color: blue; /* Adjust the color as needed */
+}

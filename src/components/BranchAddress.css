@@ -1,28 +1,46 @@
 .collapsible-panel {
-    background-color: #f1f1f1;
-    margin-bottom: 10px;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.panel-title {
+  margin: 0;
+}
+
+.panel-icon {
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.panel-content {
+  margin-top: 10px;
+}
+
+/* for side-by-side display */
+.panels-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panel {
+  flex: 1 0 calc(50% - 10px); 
+  margin-right: 10px;
+}
+
+/* Media query to make the panels full-width on smaller screens */
+@media (max-width: 768px) {
+  .panel {
+    flex: 1 0 100%;
+    margin-right: 0;
   }
-  
-  .panel-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .panel-title {
-    margin: 0;
-  }
-  
-  .panel-icon {
-    font-size: 16px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-  }
-  
-  .panel-content {
-    margin-top: 10px;
-  }
-  
+}
