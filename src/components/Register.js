@@ -6,14 +6,20 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 const Register = () => {
+
+  const redirectToGoogleForm = () => {
+    window.open('https://forms.gle/xeGq1NE9dP4vu3bU6','_blank');
+  };
+  
   return (
     <div className="Register">
       
       <div className="social-icons">
 
-      <button className="cta-button">
-      <FontAwesomeIcon icon={faUser} className="register-logo" />
-      Register Now</button>
+      <button className="cta-button" onClick={redirectToGoogleForm} >
+        <FontAwesomeIcon icon={faUser} className="register-logo" />
+             Register Now
+      </button>
 
         <a href="https://www.youtube.com/">
           <FontAwesomeIcon icon={faYoutube} />

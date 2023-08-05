@@ -8,10 +8,15 @@ const Header = () => {
     <div className="header">
       <div className="contact-info">
         <p>
-          <FontAwesomeIcon icon={faPhone} /> +1 123 456 789
+          <FontAwesomeIcon icon={faPhone} /> +91 7001800058
         </p>
+        
         <p>
-          <FontAwesomeIcon icon={faEnvelope} /> example@example.com
+          <FontAwesomeIcon icon={faPhone} /> +91 9304600520
+        </p>
+        
+        <p>
+          <FontAwesomeIcon icon={faEnvelope} /> bhagwatiiasacademy@gmail.com
         </p>
       </div>
     </div>

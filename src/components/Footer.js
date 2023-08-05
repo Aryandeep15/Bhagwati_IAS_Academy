@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
       <div className="footer-content">
         <div className="footer-margin"></div>
-        <p className="copyright">© 2023 Bharat IAS Academy</p>
+        <p className="copyright">© 2023 Bhagwati IAS Academy</p>
       </div>
       <button className="back-to-top" onClick={scrollToTop}>Back on top</button>
     </footer>

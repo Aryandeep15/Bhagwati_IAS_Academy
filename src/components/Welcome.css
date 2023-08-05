@@ -4,10 +4,10 @@
     margin-top: 5px;
     text-align: center;
   }
-  
   .welcome-section h1 {
     color: white;
     font-size: 54px;
     font-weight: bold;
+    background-color: rgb(175, 40, 40);
   }
   
