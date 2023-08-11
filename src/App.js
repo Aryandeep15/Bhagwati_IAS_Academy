@@ -12,6 +12,9 @@ import Academy from './components/academyIntro';
 import AcademyDetails from './components/AcademicDetails';
 import DirectorsDetails from './components/directorsdesk';
 import ContactUs from './components/ContactUs';
+import Aboutus from './components/AboutUs';
+import Videos from './components/Videos';
+import Courses from './components/courses';
 
 const HideableSections = ({ children, hideOnRoutes }) => {
   const location = useLocation();
@@ -30,9 +33,13 @@ const App = () => {
 
         <Routes>
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/about" element={<Aboutus />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/courses" element={<Courses />} />
+
         </Routes>
 
-        <HideableSections hideOnRoutes={['/contact']}>
+        <HideableSections hideOnRoutes={['/contact','/about','/videos','/courses','/blog']}>
           <PosterSection />
           <Welcome />
           

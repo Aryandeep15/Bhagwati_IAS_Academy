@@ -1,0 +1,13 @@
+.courses-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px; 
+    padding: 20px 0px ;
+    background-color: #f5f5f5;
+}
+
+.courses-container img {
+    max-width: 100%;
+    max-height: 100%;
+}

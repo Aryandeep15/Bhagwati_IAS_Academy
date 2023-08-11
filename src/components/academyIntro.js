@@ -10,11 +10,9 @@ const AcademyIntro = () => {
       <img src={Logo} alt="Academy Logo" className="academy-logo" />
       <h2>About Us</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        lacinia, magna vel iaculis scelerisque, nisi odio lacinia arcu, nec
-        auctor tortor tellus vitae elit.
+      Bhagwah IAS academy is an Indian educational organisation for civil services aspirants. Founded in 2005 by Bharat Singh in Delhi...
       </p>
-      <Link to="/academy/details" className="read-more-btn">Read More</Link>
+      <Link to="/about" className="read-more-btn">Read More</Link>
     </div>
   );
 };
@@ -25,9 +23,8 @@ const DirectorMessage = () => {
       <img src={DirectorPhoto} alt="Director" className="director-photo" />
       <h2>From Director's Desk</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        lacinia, magna vel iaculis scelerisque, nisi odio lacinia arcu, nec
-        auctor tortor tellus vitae elit. Nulla facilisi. Sed nec est elit.
+        Dear Students,
+        Warm welcome and hoping all is well. We are dedicated to your success. But it needs hard work and commitment...
       </p>
       <Link to="/directors/details" className="read-more-btn">Read More</Link>
     </div>

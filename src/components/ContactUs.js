@@ -22,8 +22,9 @@ const ContactUs = () => {
           <h3>Kolkata</h3>
           {isFlipped.kolkata && (
             <div className="address">
-              <p>Address Line 1, Kolkata</p>
-              <p>Address Line 2, Kolkata</p>
+              <p>Flat No. C1/701 Street-702</p>
+              <p>Near City Centre-2</p>
+              <p>New Town - Kolkata</p>
             </div>
           )}
         </div>
@@ -34,8 +35,9 @@ const ContactUs = () => {
           <h3>Delhi</h3>
           {isFlipped.delhi && (
             <div className="address">
-              <p>Address Line 1, Delhi</p>
-              <p>Address Line 2, Delhi</p>
+              <p>98, Vidya Vihar</p>
+              <p>West Enclave,</p>
+              <p>Pitampura, Delhi</p>
             </div>
           )}
         </div>
